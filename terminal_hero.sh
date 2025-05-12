@@ -21,21 +21,21 @@ while true; do
                     gagne=1
                     break
                 else
-                    echo "❌ Ce n'est pas le bon nombre."
+                    echo " Ce n'est pas le bon nombre."
                     essai_restant=$((essai_restant - 1))
                 fi
             done
 
             if [ $gagne -eq 0 ]; then
-                echo "😢 Vous avez perdu. Le bon nombre était $nombre."
+                echo " Vous avez perdu. Le bon nombre était $nombre."
             fi
             ;;
         2)
-            echo "👋 Merci d'avoir joué !"
+            echo " Merci d'avoir joué !"
             break
             ;;
         *)
-            echo "⚠️ Option invalide, veuillez réessayer."
+            echo "⚠ Option invalide, veuillez réessayer."
             ;;
     esac
 
